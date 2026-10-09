@@ -25,6 +25,6 @@ Expo / React Native companion app for the Camplink campus marketplace and commun
 
 - Google sign-in must be enabled under Supabase Authentication → Providers → Google. Add the `camplink://auth/callback` redirect URI to Supabase Auth's redirect allow list and configure the Google OAuth client IDs/redirect URI in the provider settings.
 - Payment providers use the existing Supabase Edge Functions. Configure M-Pesa, PesaPal, and PayPal secrets in Supabase; payment confirmation and wallet crediting happen server-side.
-- Apply the migration in `../supabase/migrations/20261009090000_mobile_admin_owner.sql` using the parent repository's Supabase migration workflow to promote `shakesian6@gmail.com` to admin. Other admin controls remain guarded by Supabase role checks.
+- The owner promotion migration is in the separate Camplink backend repository at `supabase/migrations/20261009090000_mobile_admin_owner.sql`; apply it with that repository's Supabase migration workflow to promote `shakesian6@gmail.com`. Other admin controls remain guarded by Supabase role checks.
 
 The local `.env` file is ignored by Git; `.env.example` is the checked-in template. Never commit provider secrets or Supabase service-role keys.
