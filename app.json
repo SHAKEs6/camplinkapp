@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Camplink Connect",
+    "slug": "camplink-connect",
+    "version": "1.0.0",
+    "scheme": "camplink",
+    "orientation": "portrait",
+    "icon": "./assets/camplink-logo.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#5140C9",
+        "foregroundImage": "./assets/camplink-logo.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.camplinkconnect"
+    },
+    "web": {
+      "favicon": "./assets/camplink-logo.png"
+    },
+    "plugins": [
+      "expo-web-browser"
+    ]
+  }
+}
